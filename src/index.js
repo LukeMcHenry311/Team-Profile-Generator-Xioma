@@ -1,7 +1,24 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-manager();
+function white() {
+    inquirer.prompt([
+        {
+            type: 'list',
+            name: 'which',
+            message: 'engineer or intern',
+            choices: ['engineer', 'intern', 'neither']
+        }
+    ]).then(val => {
+        if (val.which == 'engineer') {
+            engineer();
+        } else if (val.which == 'intern') {
+            intern();
+        } else {
+            create();
+        }
+    })
+}
 
 function manager() {
     inquirer.prompt([
@@ -29,7 +46,6 @@ function manager() {
         const mngr = new mngr(val.name, val.id, val.email, val.github);
         console.log(mngr);
     })
-    engineer();
 }
 
 function engineer() {
@@ -58,7 +74,6 @@ function engineer() {
         const eng = new eng(val.name, val.id, val.email, val.github);
         console.log(eng);
     })
-    intern();
 };
 
 function intern() {
@@ -88,3 +103,4 @@ function intern() {
         console.log(int);
     })
 };
+
