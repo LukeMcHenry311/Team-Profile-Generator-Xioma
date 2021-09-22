@@ -37,7 +37,27 @@ function questions() {
             });
         };
 
-        function createTeam() {}
+        function createTeam() {
+            inquirer.prompt([
+                {
+                    type: 'list',
+                    name: 'natsuki',
+                    message: 'engineer, intern, or done?',
+                    choices: ['engineer', 'intern', 'done'],
+                },
+            ]).then(response => {
+                switch (response.natsuki) {
+                    case 'engineer':
+                        createEngineer();
+                        break;
+                    case 'intern':
+                        createIntern();
+                        break;
+                    default:
+                        createTeam();
+                }
+            })
+        }
 
         function createEngineer() {
             inquirer.prompt([
