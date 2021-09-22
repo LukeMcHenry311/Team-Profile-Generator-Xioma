@@ -30,7 +30,7 @@
     "iconv-lite": "^0.4.24",
     "ieee754": "^1.2.1",
     "inherits": "^2.0.4",
-    "inquirer": "^8.1.2",
+    "inquirer": "^8.1.5",
     "is-fullwidth-code-point": "^3.0.0",
     "is-interactive": "^1.0.0",
     "is-unicode-supported": "^0.1.0",
@@ -59,7 +59,6 @@
     "util-deprecate": "^1.0.2",
     "wcwidth": "^1.0.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "node "
   },
