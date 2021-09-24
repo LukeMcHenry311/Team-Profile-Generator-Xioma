@@ -60,7 +60,7 @@
     "wcwidth": "^1.0.1"
   },
   "scripts": {
-    "test": "node "
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -74,5 +74,8 @@
   "bugs": {
     "url": "https://github.com/LukeMcHenry311/Team-Profile-Generator-Xioma/issues"
   },
-  "homepage": "https://github.com/LukeMcHenry311/Team-Profile-Generator-Xioma#readme"
+  "homepage": "https://github.com/LukeMcHenry311/Team-Profile-Generator-Xioma#readme",
+  "devDependencies": {
+    "jest": "^27.2.1"
+  }
 }
