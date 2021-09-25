@@ -5,7 +5,6 @@
 * [Description](#description)
 * [Technologies](#technologies)
 * [Github Link](#github-link)
-* [Deployed-Application](#deployed-application)
 * [Collaborations](#collaborations)
 * [Struggles](#struggles)
 
